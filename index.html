@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaavrasoi - Pure Taste of Tradition</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ff944d;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        @media (min-width: 600px) {
+            .products {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+            .product {
+                width: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Gaavrasoi</h1>
+    <p>Pure Taste of Tradition</p>
+</header>
+
+<nav>
+    <a href="#products">Products</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Puruliya Laddu">
+            <h3>Puruliya Chinni Laddu</h3>
+            <p>Sweet and traditional laddu made with pure ingredients.</p>
+            <p><b>Price:</b> ₹150 / 500g</p>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Riwaayat Chinni Laddu">
+            <h3>Riwaayat Chinni Laddu</h3>
+            <p>Classic taste of India with rich flavors.</p>
+            <p><b>Price:</b> ₹200 / 500g</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="about">
+    <h2>About Us</h2>
+    <p>At Gaavrasoi, we bring you the authentic taste of Indian tradition. 
+    Our laddus are made from the finest ingredients, keeping health and taste in mind. 
+    We are committed to delivering freshness and purity in every bite.</p>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p><b>Email:</b> contact@gaavrasoi.com</p>
+    <p><b>Phone:</b> +91 9876543210</p>
+    <p><b>Address:</b> Hajipur, Bihar, India</p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Gaavrasoi. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
