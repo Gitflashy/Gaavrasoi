@@ -122,3 +122,74 @@
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Food Brand</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: tomato; color: white; padding: 20px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; }
+        .banner { background: url('https://source.unsplash.com/1600x500/?food') no-repeat center/cover; height: 300px; }
+        .section { padding: 40px; text-align: center; }
+        .products { display: flex; justify-content: center; flex-wrap: wrap; }
+        .product { border: 1px solid #ddd; padding: 20px; margin: 10px; width: 200px; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; }
+        input, textarea { width: 100%; padding: 10px; margin: 5px 0; }
+        button { background: tomato; color: white; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍔 My Food Brand</h1>
+        <nav>
+            <a href="#products">Products</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="banner"></div>
+
+    <section id="products" class="section">
+        <h2>Our Products</h2>
+        <div class="products">
+            <div class="product">
+                <h3>Pizza</h3>
+                <p>Price: ₹199</p>
+            </div>
+            <div class="product">
+                <h3>Burger</h3>
+                <p>Price: ₹99</p>
+            </div>
+            <div class="product">
+                <h3>Pasta</h3>
+                <p>Price: ₹149</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>We are a passionate food brand bringing delicious meals to your doorstep. Fresh, tasty, and made with love!</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 My Food Brand</p>
+    </footer>
+
+</body>
+</html>
