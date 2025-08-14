@@ -3,193 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaavrasoi - Pure Taste of Tradition</title>
+    <title>Mithai Store</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #fff8f0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .navbar h1 {
+            margin: 0;
+        }
+
+        .navbar-buttons button {
+            margin-left: 10px;
+            padding: 8px 15px;
+            border: none;
+            background-color: white;
+            color: #ff9800;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            height: 300px;
+            background: url('https://images.unsplash.com/photo-1604908177225-6d8b5b5a15d3') no-repeat center center/cover;
+        }
+
+        /* Products */
+        .products {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .products h2 {
+            margin-bottom: 20px;
             color: #333;
         }
-        header {
-            background-color: #ff6600;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            background-color: #ff944d;
+
+        .product-list {
             display: flex;
             justify-content: center;
-            padding: 10px;
+            gap: 20px;
             flex-wrap: wrap;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 8px 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
+
         .product {
-            background: white;
-            border-radius: 10px;
+            background-color: white;
             padding: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 250px;
         }
+
         .product img {
             width: 100%;
-            max-width: 300px;
             border-radius: 10px;
         }
-        footer {
-            background-color: #ff6600;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
+
+        .product h3 {
+            margin: 10px 0 5px;
+            color: #444;
         }
-        @media (min-width: 600px) {
-            .products {
-                display: flex;
-                justify-content: space-around;
-                flex-wrap: wrap;
-            }
-            .product {
-                width: 45%;
-            }
+
+        .product p {
+            margin: 5px 0;
+            color: #777;
+        }
+
+        .product .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff5722;
+        }
+
+        /* About */
+        .about {
+            background-color: #ffe0b2;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .about h2 {
+            margin-bottom: 15px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Gaavrasoi</h1>
-    <p>Pure Taste of Tradition</p>
-</header>
-
-<nav>
-    <a href="#products">Products</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<div class="container" id="products">
-    <h2>Our Products</h2>
-    <div class="products">
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Puruliya Laddu">
-            <h3>Puruliya Chinni Laddu</h3>
-            <p>Sweet and traditional laddu made with pure ingredients.</p>
-            <p><b>Price:</b> ₹150 / 500g</p>
-        </div>
-        <div class="product">
-            <img src="https://via.placeholder.com/300" alt="Riwaayat Chinni Laddu">
-            <h3>Riwaayat Chinni Laddu</h3>
-            <p>Classic taste of India with rich flavors.</p>
-            <p><b>Price:</b> ₹200 / 500g</p>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Mithai Store</h1>
+        <div class="navbar-buttons">
+            <button>Login</button>
+            <button>Add to Cart</button>
         </div>
     </div>
-</div>
 
-<div class="container" id="about">
-    <h2>About Us</h2>
-    <p>At Gaavrasoi, we bring you the authentic taste of Indian tradition. 
-    Our laddus are made from the finest ingredients, keeping health and taste in mind. 
-    We are committed to delivering freshness and purity in every bite.</p>
-</div>
-
-<div class="container" id="contact">
-    <h2>Contact Us</h2>
-    <p><b>Email:</b> contact@gaavrasoi.com</p>
-    <p><b>Phone:</b> +91 9876543210</p>
-    <p><b>Address:</b> Hajipur, Bihar, India</p>
-</div>
-
-<footer>
-    <p>&copy; 2025 Gaavrasoi. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Food Brand</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: tomato; color: white; padding: 20px; text-align: center; }
-        nav a { color: white; margin: 0 15px; text-decoration: none; }
-        .banner { background: url('https://source.unsplash.com/1600x500/?food') no-repeat center/cover; height: 300px; }
-        .section { padding: 40px; text-align: center; }
-        .products { display: flex; justify-content: center; flex-wrap: wrap; }
-        .product { border: 1px solid #ddd; padding: 20px; margin: 10px; width: 200px; }
-        footer { background: #333; color: white; text-align: center; padding: 10px; }
-        input, textarea { width: 100%; padding: 10px; margin: 5px 0; }
-        button { background: tomato; color: white; padding: 10px; border: none; cursor: pointer; }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>🍔 My Food Brand</h1>
-        <nav>
-            <a href="#products">Products</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
+    <!-- Banner -->
     <div class="banner"></div>
 
-    <section id="products" class="section">
+    <!-- Products -->
+    <div class="products">
         <h2>Our Products</h2>
-        <div class="products">
+        <div class="product-list">
             <div class="product">
-                <h3>Pizza</h3>
-                <p>Price: ₹199</p>
+                <img src="https://images.unsplash.com/photo-1617196037137-c04c7f49f0cb" alt="PuruKya">
+                <h3>PuruKya</h3>
+                <p>1 Kg</p>
+                <p class="price">₹499</p>
             </div>
             <div class="product">
-                <h3>Burger</h3>
-                <p>Price: ₹99</p>
+                <img src="https://images.unsplash.com/photo-1607082349566-c57a3584f788" alt="Riwaayat Laddu">
+                <h3>Riwaayat Laddu (Chinni Laddu)</h3>
+                <p>500g</p>
+                <p class="price">₹249</p>
             </div>
             <div class="product">
-                <h3>Pasta</h3>
-                <p>Price: ₹149</p>
+                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90" alt="Dhan Mithas">
+                <h3>Dhan Mithas (Chawal Laddu)</h3>
+                <p>1 Kg</p>
+                <p class="price">₹399</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="about" class="section">
+    <!-- About -->
+    <div class="about">
         <h2>About Us</h2>
-        <p>We are a passionate food brand bringing delicious meals to your doorstep. Fresh, tasty, and made with love!</p>
-    </section>
-
-    <section id="contact" class="section">
-        <h2>Contact Us</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>© 2025 My Food Brand</p>
-    </footer>
+        <p>We bring you the taste of tradition with our delicious and fresh handmade sweets. Every bite is filled with love and purity.</p>
+    </div>
 
 </body>
 </html>
