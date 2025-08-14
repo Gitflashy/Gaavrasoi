@@ -20,7 +20,7 @@ nav{display:flex;gap:12px;align-items:center}
 button{cursor:pointer;border:none;border-radius:8px;font-weight:700}
 .icon-btn{background:transparent;color:#fff;position:relative}
 .cart-badge{position:absolute;top:-6px;right:-6px;background:#ff2e2e;color:#fff;border-radius:50%;padding:3px 6px;font-size:12px;font-weight:800}
-.banner{background:url('https://via.placeholder.com/1200x350.png?text=Gaavrasoi') center/cover;height:350px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:2rem;font-weight:bold;text-shadow:2px 2px 5px black}
+.banner{background:url('') center/cover;height:350px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:2rem;font-weight:bold;text-shadow:2px 2px 5px black}
 section{padding:28px 16px}
 h2.section-title{text-align:center;color:var(--accent);margin-bottom:18px}
 .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
@@ -45,7 +45,10 @@ footer{background:var(--accent);color:#fff;padding:18px 0;text-align:center;marg
 </div>
 </header>
 
-<div class="banner">Taste of Tradition 🍬</div>
+<!-- Banner Placeholder: Add your image URL in background style -->
+<div class="banner">
+    Taste of Tradition 🍬
+</div>
 
 <section id="products">
 <h2 class="section-title">Our Products</h2>
@@ -89,7 +92,6 @@ Gaavrasoi brings you authentic traditional sweets and snacks from Bihar and near
 
 <script>
 let cart = [];
-
 function addToCart(btn){
   let card = btn.parentElement;
   let name = card.dataset.name;
@@ -99,13 +101,11 @@ function addToCart(btn){
   updateCartCount();
   alert(name+" added to cart!");
 }
-
 function updateCartCount(){
   let count = cart.reduce((a,b)=>a+b.qty,0);
   let badge = document.getElementById('cart-count');
   if(count>0){badge.style.display='inline';badge.textContent=count}else{badge.style.display='none'}
 }
-
 function checkoutCart(){
   if(cart.length===0){alert("Cart is empty!");return;}
   let msg = "I want to order:\n";
